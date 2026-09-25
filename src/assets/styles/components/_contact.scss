@@ -1,0 +1,91 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+
+.contact {
+	border-top: 1px solid $color-line;
+	padding-top: vc(88);
+	padding-bottom: vc(28);
+
+	&__label {
+		margin-bottom: vc(16);
+	}
+
+	&__title {
+		max-width: vc(980);
+		font-weight: 700;
+		font-size: vc(32);
+		line-height: 1.1;
+		letter-spacing: -0.045em;
+
+		@include desktop {
+			font-size: vc(64);
+		}
+	}
+
+	&__text {
+		margin-top: vc(24);
+		max-width: vc(640);
+		font-size: vc(15);
+		line-height: calc(24 / 15);
+		color: $color-text-muted;
+
+		@include desktop {
+			margin-top: vc(32);
+			font-size: vc(18);
+			line-height: calc(28 / 18);
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin-top: vc(28);
+		gap: vc(12) vc(20);
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		font-weight: 600;
+		font-size: vc(15);
+		letter-spacing: -0.02em;
+		text-decoration: none;
+		color: $color-accent;
+		transition: color $duration-fast $easing-out;
+
+		&:hover,
+		&:focus-visible {
+			color: $color-cream;
+		}
+
+		@include desktop {
+			font-size: vc(18);
+		}
+	}
+
+	&__note {
+		margin-top: vc(28);
+		font-size: vc(13);
+		color: $color-text-muted;
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: vc(72);
+		border-top: 1px solid $color-line;
+		padding-top: vc(20);
+		padding-bottom: vc(12);
+		font-size: vc(12);
+		letter-spacing: 0.04em;
+		color: $color-text-muted;
+	}
+
+	@include desktop {
+		padding-top: vc(140);
+		padding-bottom: vc(40);
+	}
+}

@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Evgeny Markov — Frontend Developer",
+    "description": "Frontend developer focused on Vue.js, Nuxt and TypeScript. 6+ years of production work: landing pages, SPAs, SSR apps, dashboards and admin panels."
+  },
+  "loader": {
+    "label": "Loading",
+    "word": "Loading"
+  },
+  "nav": {
+    "home": "Back to top",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact",
+    "langRu": "RU",
+    "langEn": "EN"
+  },
+  "hero": {
+    "kicker": "Frontend developer · Middle",
+    "name": "Evgeny Markov",
+    "role": "Vue.js / Nuxt / TypeScript",
+    "lead": "I build interfaces that stay calm on the surface and predictable underneath — from campaign landings to SSR cabinets and admin tools.",
+    "cta": "See selected work",
+    "scroll": "Scroll",
+    "years": "6+ years in production"
+  },
+  "about": {
+    "label": "About",
+    "title": "Frontend end-to-end — from the scenario to production.",
+    "p1": "Frontend developer with 6+ years of commercial experience (2019 — present). Focused on Vue 3, Nuxt 2/3/4, TypeScript, SPA and SSR apps, landing pages, client cabinets and admin panels.",
+    "p2": "Agency and product-studio background: from layout and jQuery UIs to complex apps with GraphQL, headless CMS and team CI. I own features end-to-end — from design and UI scenarios to API integration and production support. Since late 2024 I use AI agents systematically, while still signing off on UI quality and release readiness.",
+    "stats": {
+      "years": { "value": "6+", "label": "years of commercial work" },
+      "projects": { "value": "80+", "label": "projects in git history" },
+      "stack": { "value": "Vue", "label": "Nuxt · TypeScript · GSAP" }
+    }
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "The stack I actually use.",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "items": ["Vue.js 2/3", "Nuxt 2/3/4", "TypeScript", "JavaScript ES6+", "HTML5 / CSS3", "SCSS / BEM", "Tailwind CSS", "Vite"]
+      },
+      "data": {
+        "title": "Data & state",
+        "items": ["Pinia", "Vuex", "Vue Router", "GraphQL", "Apollo Client", "REST / Axios", "Strapi CMS", "JWT"]
+      },
+      "ui": {
+        "title": "UI & motion",
+        "items": ["Quasar", "Nuxt UI", "GSAP", "Swiper", "Chart.js", "Vue Flow", "PDF.js"]
+      },
+      "quality": {
+        "title": "Quality & delivery",
+        "items": ["ESLint / Stylelint", "Oxlint", "Vitest", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted Frontend"]
+      }
+    }
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Three teams. Dozens of products.",
+    "jobs": {
+      "yeniseimedia": {
+        "role": "Frontend developer (Middle)",
+        "company": "Yeniseimedia",
+        "period": "June 2021 — July 2026",
+        "place": "Product digital studio",
+        "points": [
+          "Built and supported 50+ frontend projects: landings, SPA/SSR apps, cabinets and admin tools.",
+          "Owned UI end-to-end: design-stage states, layout constraints, stable production screens.",
+          "Moved legacy Gulp/Pug/jQuery stacks to Vue 3, Vite, Nuxt 3/4 and TypeScript.",
+          "Shipped Nuxt SSR/SPA, Quasar dashboards, Apollo GraphQL and JWT cabinets with Chart.js.",
+          "Worked with Docker Compose and team GitLab CI; since 2024 used AI agents with human review."
+        ]
+      },
+      "ninelines": {
+        "role": "Frontend developer (Middle)",
+        "company": "Ninelines",
+        "period": "February 2020 — June 2021",
+        "place": "Digital agency",
+        "points": [
+          "Shipped 30+ promo sites and special projects for media and brands.",
+          "Did mobile-first layout from Figma/PSD: adaptive, pixel-perfect, cross-browser.",
+          "Built interaction with GSAP, scroll effects, sliders and video players.",
+          "Optimised assets, wired analytics and Barba.js page transitions."
+        ]
+      },
+      "videinfra": {
+        "role": "Junior Frontend developer",
+        "company": "Vide Infra Group",
+        "period": "April 2019 — June 2019",
+        "place": "Digital agency",
+        "points": [
+          "Built and iterated UI from layouts: HTML/Twig, SCSS, adaptive and cross-browser work.",
+          "Wrote client-side JavaScript with jQuery: menus, popups, sliders, forms.",
+          "Helped develop and maintain corporate and eCommerce frontends.",
+          "Worked in the agency website-starter: section components, styles and UI behaviour."
+        ]
+      }
+    }
+  },
+  "work": {
+    "label": "Work",
+    "title": "Public projects from production.",
+    "hint": "Browse the slides",
+    "open": "Open site",
+    "projects": {
+      "ethics": {
+        "title": "AI Ethics",
+        "text": "AI Alliance portal — ethics.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "guide": {
+        "title": "Alliance Guide",
+        "text": "AI Alliance content guide — guide.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "rating": {
+        "title": "University ranking",
+        "text": "AI Alliance university ranking — rating.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "mck": {
+        "title": "MCK",
+        "text": "AI Alliance MCK site — mck.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "adness": {
+        "title": "Adness",
+        "text": "Marketing site for an ad network.",
+        "tag": "Ad tech"
+      },
+      "adxad": {
+        "title": "Adxad",
+        "text": "Marketing site for an ad tech platform.",
+        "tag": "Ad tech"
+      },
+      "autopodpiska": {
+        "title": "Autopodpiska",
+        "text": "Promo landing for a car subscription service.",
+        "tag": "Landing"
+      },
+      "miraitech": {
+        "title": "MiraiTech",
+        "text": "Corporate site for a product company.",
+        "tag": "Product"
+      },
+      "pnbAgency": {
+        "title": "PNB Agency",
+        "text": "Website for PNB Agency digital studio.",
+        "tag": "Agency"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Open to strong teams and clear products.",
+    "text": "Full-time. Remote only. Happy to talk about Vue / Nuxt work where both the interface and the engineering matter.",
+    "links": {
+      "telegram": "Telegram",
+      "hh": "Resume"
+    },
+    "note": "Reach out on Telegram or open the resume on hh.ru. Public projects live in the work section above."
+  },
+  "footer": {
+    "copy": "Evgeny Markov",
+    "stack": "Vue 3 · Vite · GSAP"
+  }
+}

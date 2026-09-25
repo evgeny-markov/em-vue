@@ -1,0 +1,190 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+
+.work {
+	border-top: 1px solid $color-line;
+	padding-top: vc(72);
+	padding-bottom: vc(40);
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: vc(28);
+		gap: vc(16);
+
+		@include desktop {
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+			margin-bottom: vc(40);
+		}
+	}
+
+	&__label {
+		margin-bottom: vc(12);
+	}
+
+	&__title {
+		max-width: vc(720);
+		font-weight: 700;
+		font-size: vc(28);
+		line-height: 1.12;
+		letter-spacing: -0.04em;
+
+		@include desktop {
+			font-size: vc(48);
+		}
+	}
+
+	&__hint {
+		display: none;
+		font-weight: 500;
+		font-size: vc(12);
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: $color-text-muted;
+
+		@include desktop {
+			display: block;
+		}
+	}
+
+	&__pin {
+		overflow: hidden;
+
+		@include desktop {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: vc(40);
+			min-height: 100svh;
+		}
+	}
+
+	&__track {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-right: vc(20);
+		padding-left: vc(20);
+		gap: vc(16);
+
+		@include desktop {
+			display: flex;
+			padding-right: vc(64);
+			padding-bottom: vc(80);
+			padding-left: vc(64);
+			width: max-content;
+			gap: vc(24);
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid $color-line;
+		border-radius: vc(20);
+		padding: vc(24);
+		min-height: vc(240);
+		background-color: $color-bg-elevated;
+		transition:
+			border-color $duration-fast $easing-out,
+			background-color $duration-fast $easing-out,
+			box-shadow $duration-base $easing-out;
+
+		@include desktop {
+			flex-shrink: 0;
+			border-radius: vc(28);
+			padding: vc(32);
+			width: vc(420);
+			min-height: vc(460);
+			will-change: transform;
+		}
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				border-color: rgba($color-accent, 0.42);
+				box-shadow: 0 vc(18) vc(40) color-mix(in srgb, var(--theme-ink) 35%, transparent);
+				background-color: $color-surface;
+
+				.work__card-index {
+					letter-spacing: 0.18em;
+				}
+
+				.work__card-link {
+					color: $color-cream;
+					gap: vc(10);
+
+					&::after {
+						opacity: 1;
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
+
+	&__card-index {
+		font-weight: 600;
+		font-size: vc(13);
+		letter-spacing: 0.12em;
+		color: $color-accent;
+		transition: letter-spacing $duration-base $easing-out;
+	}
+
+	&__card-tag {
+		margin-top: vc(24);
+		font-size: vc(12);
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: $color-text-muted;
+	}
+
+	&__card-title {
+		margin-top: vc(10);
+		font-weight: 700;
+		font-size: vc(24);
+		letter-spacing: -0.03em;
+
+		@include desktop {
+			font-size: vc(32);
+		}
+	}
+
+	&__card-text {
+		margin-top: vc(12);
+		font-size: vc(14);
+		line-height: calc(22 / 14);
+		color: $color-text-muted;
+	}
+
+	&__card-link {
+		display: inline-flex;
+		align-items: center;
+		margin-top: auto;
+		padding-top: vc(24);
+		font-weight: 600;
+		font-size: vc(13);
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: $color-accent;
+		transition:
+			color $duration-fast $easing-out,
+			gap $duration-fast $easing-out;
+		gap: vc(6);
+
+		&::after {
+			content: "→";
+			opacity: 0;
+			transform: translateX(#{vc(-4)});
+			transition:
+				transform $duration-fast $easing-out,
+				opacity $duration-fast $easing-out;
+		}
+	}
+
+	@include desktop {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,151 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "functions" as *;
+
+:root {
+	--width-base: 360;
+	--width-current: 100vmin;
+	--width-multiplier: var(--width-current) / var(--width-base);
+	--theme-bg: #{$palette-bg};
+	--theme-bg-elevated: #{$palette-bg-elevated};
+	--theme-surface: #{$palette-surface};
+	--theme-text: #{$palette-text};
+	--theme-text-muted: #{$palette-text-muted};
+	--theme-line: #{$palette-line};
+	--theme-soft: #{$palette-text};
+	--theme-ink: #{$palette-bg};
+	--theme-duration: #{$duration-theme};
+}
+
+@include desktop {
+	:root {
+		--width-base: 1440;
+		--width-current: 100vw;
+	}
+}
+
+@include desktop-aspect {
+	:root {
+		--width-base: 786;
+		--width-current: 100vh;
+	}
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::selection {
+	color: $palette-bg;
+	background-color: $color-accent;
+}
+
+html {
+	font-size: 16px;
+	background-color: $color-bg;
+	transition: background-color var(--theme-duration) $easing-out;
+	scroll-behavior: auto;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: $font-primary;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: vc(15);
+	line-height: calc(24 / 15);
+	color: $color-text;
+	background-color: $color-bg;
+	transition:
+		color var(--theme-duration) $easing-out,
+		background-color var(--theme-duration) $easing-out;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button,
+a {
+	&:focus-visible {
+		outline: 2px solid $color-accent;
+		outline-offset: 3px;
+	}
+}
+
+#app {
+	position: relative;
+	min-height: 100vh;
+}
+
+main {
+	position: relative;
+	z-index: 1;
+}
+
+html.is-locked,
+html.is-locked body {
+	overflow: hidden;
+}
+
+.layout {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: vc(20);
+	padding-left: vc(20);
+	width: 100%;
+	max-width: 1440px;
+
+	@include desktop {
+		padding-right: vc(64);
+		padding-left: vc(64);
+	}
+}
+
+.section-label {
+	font-weight: 600;
+	font-size: vc(12);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: $color-accent;
+}
+
+.hero,
+.about,
+.skills,
+.experience,
+.work,
+.contact,
+.sitenav {
+	transition: color var(--theme-duration) $easing-out;
+}
+
+.about,
+.experience,
+.work,
+.contact,
+.skills__item,
+.work__card,
+.sitenav__progress {
+	transition:
+		color var(--theme-duration) $easing-out,
+		background-color var(--theme-duration) $easing-out,
+		border-color var(--theme-duration) $easing-out,
+		box-shadow var(--theme-duration) $easing-out;
+}

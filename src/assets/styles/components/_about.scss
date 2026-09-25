@@ -1,0 +1,98 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+
+.about {
+	border-top: 1px solid $color-line;
+	padding-top: vc(88);
+	padding-bottom: vc(88);
+
+	&__inner {
+		will-change: transform;
+	}
+
+	&__label {
+		margin-bottom: vc(16);
+	}
+
+	&__title {
+		max-width: vc(920);
+		font-weight: 700;
+		font-size: vc(28);
+		line-height: 1.12;
+		letter-spacing: -0.04em;
+
+		@include desktop {
+			font-size: vc(56);
+		}
+	}
+
+	&__copy {
+		display: grid;
+		margin-top: vc(28);
+		max-width: vc(760);
+		gap: vc(16);
+
+		@include desktop {
+			grid-template-columns: 1fr 1fr;
+			margin-top: vc(40);
+			max-width: none;
+			gap: vc(32);
+		}
+	}
+
+	&__text {
+		font-size: vc(15);
+		line-height: calc(24 / 15);
+		color: $color-text-muted;
+
+		@include desktop {
+			font-size: vc(16);
+			line-height: calc(26 / 16);
+		}
+	}
+
+	&__stats {
+		display: grid;
+		grid-template-columns: 1fr;
+		list-style: none;
+		margin-top: vc(40);
+		gap: vc(20);
+
+		@include desktop {
+			grid-template-columns: repeat(3, 1fr);
+			margin-top: vc(72);
+			gap: vc(24);
+		}
+	}
+
+	&__stat {
+		border-top: 1px solid $color-line;
+		padding-top: vc(20);
+	}
+
+	&__stat-value {
+		display: block;
+		font-weight: 700;
+		font-size: vc(40);
+		line-height: 1;
+		letter-spacing: -0.05em;
+		color: $color-accent;
+
+		@include desktop {
+			font-size: vc(72);
+		}
+	}
+
+	&__stat-label {
+		display: block;
+		margin-top: vc(8);
+		font-size: vc(13);
+		color: $color-text-muted;
+	}
+
+	@include desktop {
+		padding-top: vc(140);
+		padding-bottom: vc(140);
+	}
+}

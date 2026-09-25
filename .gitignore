@@ -1,0 +1,8 @@
+node_modules
+dist
+.cursor
+.vite
+*.local
+.DS_Store
+Thumbs.db
+DATA.md

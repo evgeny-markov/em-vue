@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Евгений Марков — Frontend-разработчик",
+    "description": "Frontend-разработчик Vue.js / Nuxt / TypeScript. 6+ лет коммерческого опыта: лендинги, SPA, SSR, кабинеты и админ-панели."
+  },
+  "loader": {
+    "label": "Загрузка",
+    "word": "Загрузка"
+  },
+  "nav": {
+    "home": "На главную",
+    "about": "Обо мне",
+    "skills": "Навыки",
+    "experience": "Опыт",
+    "work": "Проекты",
+    "contact": "Контакты",
+    "langRu": "RU",
+    "langEn": "EN"
+  },
+  "hero": {
+    "kicker": "Frontend-разработчик · Middle",
+    "name": "Евгений Марков",
+    "role": "Vue.js / Nuxt / TypeScript",
+    "lead": "Собираю интерфейсы, которые выглядят спокойно и работают предсказуемо — от промо-лендингов до SSR-кабинетов и админок.",
+    "cta": "Смотреть проекты",
+    "scroll": "Листайте",
+    "years": "6+ лет в продакшене"
+  },
+  "about": {
+    "label": "Обо мне",
+    "title": "Делаю фронтенд end-to-end — от сценария до продакшена.",
+    "p1": "Frontend-разработчик с 6+ годами коммерческого опыта (2019 — н.в.). Специализация — Vue 3, Nuxt 2/3/4, TypeScript, SPA и SSR-приложения, лендинги, личные кабинеты и админ-панели.",
+    "p2": "Работал в digital-агентствах и продуктовой студии: от вёрстки и jQuery до веб-приложений с GraphQL, headless CMS и командным CI. Веду фичи end-to-end — от дизайна и UI-сценариев до интеграции с API и поддержки в production. С конца 2024 года системно использую AI-агентов, но финально отвечаю за качество UI и готовность интерфейса к релизу.",
+    "stats": {
+      "years": { "value": "6+", "label": "лет коммерческого опыта" },
+      "projects": { "value": "80+", "label": "проектов в git-истории" },
+      "stack": { "value": "Vue", "label": "Nuxt · TypeScript · GSAP" }
+    }
+  },
+  "skills": {
+    "label": "Навыки",
+    "title": "Стек, которым пользуюсь каждый день.",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "items": ["Vue.js 2/3", "Nuxt 2/3/4", "TypeScript", "JavaScript ES6+", "HTML5 / CSS3", "SCSS / BEM", "Tailwind CSS", "Vite"]
+      },
+      "data": {
+        "title": "Данные и состояние",
+        "items": ["Pinia", "Vuex", "Vue Router", "GraphQL", "Apollo Client", "REST / Axios", "Strapi CMS", "JWT"]
+      },
+      "ui": {
+        "title": "UI и анимация",
+        "items": ["Quasar", "Nuxt UI", "GSAP", "Swiper", "Chart.js", "Vue Flow", "PDF.js"]
+      },
+      "quality": {
+        "title": "Качество и поставка",
+        "items": ["ESLint / Stylelint", "Oxlint", "Vitest", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted Frontend"]
+      }
+    }
+  },
+  "experience": {
+    "label": "Опыт",
+    "title": "Три команды. Десятки продуктов.",
+    "jobs": {
+      "yeniseimedia": {
+        "role": "Frontend-разработчик (Middle)",
+        "company": "Yeniseimedia",
+        "period": "Июнь 2021 — Июль 2026",
+        "place": "Продуктовая digital-студия",
+        "points": [
+          "Разрабатывал и поддерживал 50+ frontend-проектов: лендинги, SPA/SSR, кабинеты и админки.",
+          "Вёл UI end-to-end: состояния на этапе дизайна, ограничения макетов, стабильный вид в production.",
+          "Перевёл legacy Gulp/Pug/jQuery на Vue 3, Vite, Nuxt 3/4 и TypeScript.",
+          "Строил SSR/SPA на Nuxt, дашборды на Quasar, GraphQL на Apollo, кабинеты с JWT и Chart.js.",
+          "Работал с Docker Compose и GitLab CI команды; с 2024 применял AI-агентов с human-review."
+        ]
+      },
+      "ninelines": {
+        "role": "Frontend-разработчик (Middle)",
+        "company": "Ninelines",
+        "period": "Февраль 2020 — Июнь 2021",
+        "place": "Digital-агентство",
+        "points": [
+          "Разработал 30+ промо-сайтов и спецпроектов для медиа и брендов.",
+          "Верстал mobile-first по Figma/PSD: адаптив, pixel-perfect, кроссбраузерность.",
+          "Делал интерактив на GSAP, scroll-эффекты, слайдеры и видеоплееры.",
+          "Оптимизировал assets, подключал аналитику и SPA-переходы на Barba.js."
+        ]
+      },
+      "videinfra": {
+        "role": "Junior Frontend-разработчик",
+        "company": "Vide Infra Group",
+        "period": "Апрель 2019 — Июнь 2019",
+        "place": "Digital-агентство",
+        "points": [
+          "Верстал и дорабатывал UI по макетам: HTML/Twig, SCSS, адаптив, кроссбраузерность.",
+          "Писал клиентский JavaScript на jQuery: меню, попапы, слайдеры, формы.",
+          "Участвовал в разработке и поддержке корпоративных и eCommerce-сайтов.",
+          "Работал во внутреннем website-starter: компонентная вёрстка секций и UI-поведение."
+        ]
+      }
+    }
+  },
+  "work": {
+    "label": "Проекты",
+    "title": "Публичные проекты из продакшена.",
+    "hint": "Листайте слайды",
+    "open": "Открыть сайт",
+    "projects": {
+      "ethics": {
+        "title": "Этика ИИ",
+        "text": "Портал Альянса в сфере ИИ — ethics.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "guide": {
+        "title": "Гид Альянса",
+        "text": "Контентный гид Альянса в сфере ИИ — guide.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "rating": {
+        "title": "Рейтинг вузов",
+        "text": "Рейтинг вузов Альянса в сфере ИИ — rating.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "mck": {
+        "title": "МЦК",
+        "text": "Сайт МЦК Альянса в сфере ИИ — mck.a-ai.ru.",
+        "tag": "AI / EdTech"
+      },
+      "adness": {
+        "title": "Adness",
+        "text": "Маркетинговый сайт рекламной сети.",
+        "tag": "Ad tech"
+      },
+      "adxad": {
+        "title": "Adxad",
+        "text": "Маркетинговый сайт ad tech-платформы.",
+        "tag": "Ad tech"
+      },
+      "autopodpiska": {
+        "title": "Autopodpiska",
+        "text": "Промо-лендинг сервиса автоподписки.",
+        "tag": "Лендинг"
+      },
+      "miraitech": {
+        "title": "MiraiTech",
+        "text": "Корпоративный сайт продуктовой компании.",
+        "tag": "Product"
+      },
+      "pnbAgency": {
+        "title": "PNB Agency",
+        "text": "Сайт digital-агентства PNB Agency.",
+        "tag": "Агентство"
+      }
+    }
+  },
+  "contact": {
+    "label": "Контакты",
+    "title": "Открыт к сильным командам и понятным продуктам.",
+    "text": "Полная занятость. Только удалённо. Готов обсудить Vue / Nuxt задачи, где важен и интерфейс, и аккуратная инженерия.",
+    "links": {
+      "telegram": "Telegram",
+      "hh": "Резюме"
+    },
+    "note": "Пишите в Telegram или смотрите резюме на hh.ru. Публичные проекты — в блоке выше."
+  },
+  "footer": {
+    "copy": "Евгений Марков",
+    "stack": "Vue 3 · Vite · GSAP"
+  }
+}

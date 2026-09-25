@@ -1,0 +1,131 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+
+.experience {
+	border-top: 1px solid $color-line;
+	padding-top: vc(72);
+	padding-bottom: vc(88);
+
+	&__inner {
+		will-change: transform;
+	}
+
+	&__label {
+		margin-bottom: vc(16);
+	}
+
+	&__title {
+		max-width: vc(820);
+		font-weight: 700;
+		font-size: vc(28);
+		line-height: 1.12;
+		letter-spacing: -0.04em;
+
+		@include desktop {
+			font-size: vc(48);
+		}
+	}
+
+	&__list {
+		position: relative;
+		display: grid;
+		margin-top: vc(40);
+		gap: vc(40);
+
+		@include desktop {
+			margin-top: vc(64);
+			padding-left: vc(24);
+			gap: vc(64);
+		}
+	}
+
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
+		width: 1px;
+		height: 100%;
+		background-color: $color-accent;
+		opacity: 0.45;
+		transform-origin: top center;
+
+		@include desktop {
+			display: block;
+		}
+	}
+
+	&__job {
+		display: grid;
+		border-top: 1px solid $color-line;
+		padding-top: vc(24);
+		gap: vc(16);
+
+		@include desktop {
+			grid-template-columns: vc(320) 1fr;
+			padding-top: vc(40);
+			gap: vc(48);
+		}
+	}
+
+	&__company {
+		font-weight: 700;
+		font-size: vc(18);
+	}
+
+	&__period {
+		margin-top: vc(6);
+	}
+
+	&__role {
+		font-weight: 600;
+		font-size: vc(18);
+		letter-spacing: -0.02em;
+
+		@include desktop {
+			font-size: vc(24);
+		}
+	}
+
+	&__place {
+		margin-top: vc(6);
+	}
+
+	&__points {
+		display: grid;
+		list-style: none;
+		margin-top: vc(16);
+		gap: vc(10);
+	}
+
+	&__point {
+		position: relative;
+		padding-left: vc(16);
+		font-size: vc(14);
+		line-height: calc(22 / 14);
+		color: $color-text-muted;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0.55em;
+			border-radius: 50%;
+			width: 6px;
+			height: 6px;
+			background-color: $color-accent;
+		}
+	}
+
+	&__period,
+	&__place {
+		font-size: vc(13);
+		color: $color-text-muted;
+	}
+
+	@include desktop {
+		padding-top: vc(120);
+		padding-bottom: vc(140);
+	}
+}
