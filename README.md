@@ -25,6 +25,19 @@ npm run dev
 
 Сайт откроется на `http://127.0.0.1:5173/`.
 
+## GitHub Pages
+
+Прод: [https://evgeny-markov.github.io/em-vue/](https://evgeny-markov.github.io/em-vue/)
+
+Деплой идёт автоматически из `main` через Actions (`.github/workflows/deploy-pages.yml`).  
+В Settings → Pages источник должен быть **GitHub Actions**.
+
+Локальная сборка как на Pages:
+
+```bash
+DEPLOY_PAGES=true npm run build
+```
+
 ### Другие команды
 
 | Команда | Описание |
