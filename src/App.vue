@@ -43,6 +43,7 @@ watch(
 
 const onLoaderDone = async () => {
   showLoader.value = false;
+  window.scrollTo(0, 0);
   await nextTick();
   ScrollTrigger.refresh();
 };

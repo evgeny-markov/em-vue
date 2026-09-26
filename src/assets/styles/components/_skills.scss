@@ -62,7 +62,14 @@
 		font-weight: 500;
 		font-size: vc(13);
 		background-color: $color-surface;
+		transition: border-color $duration-fast $easing-out;
 		will-change: transform;
+
+		@media (hover: hover) {
+			&:hover {
+				border-color: $color-accent;
+			}
+		}
 	}
 
 	@include desktop {
