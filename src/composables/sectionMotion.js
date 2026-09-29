@@ -13,7 +13,7 @@ export function revealFromLeft(targets, trigger, isDesktop, options = {}) {
   const {
     reduceMotion = false,
     stagger,
-    start = "top 82%",
+    start = "clamp(top 82%)",
   } = options;
 
   gsap.from(targets, {
