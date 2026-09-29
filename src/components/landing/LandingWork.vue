@@ -10,24 +10,20 @@
       </div>
 
       <div class="work__track">
-        <article
+        <a
           v-for="(project, index) in PROJECTS"
           :key="project.id"
           class="work__card"
+          :href="project.href"
+          target="_blank"
+          rel="noreferrer"
         >
           <p class="work__card-index">{{ String(index + 1).padStart(2, "0") }}</p>
           <p class="work__card-tag">{{ t(`work.projects.${project.id}.tag`) }}</p>
           <h3 class="work__card-title">{{ t(`work.projects.${project.id}.title`) }}</h3>
           <p class="work__card-text">{{ t(`work.projects.${project.id}.text`) }}</p>
-          <a
-            class="work__card-link"
-            :href="project.href"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {{ t("work.open") }}
-          </a>
-        </article>
+          <span class="work__card-link">{{ t("work.open") }}</span>
+        </a>
       </div>
     </div>
   </section>
@@ -69,20 +65,32 @@ useSectionAnimation(root, (mm, scope) => {
       return;
     }
 
+    const cards = gsap.utils.toArray(".work__card", track);
+    const CARD_REVEAL_END = 0.52;
+
+    const getEndX = () => {
+      const last = cards[cards.length - 1];
+      if (!last) {
+        return 0;
+      }
+
+      return Math.min(0, window.innerWidth * CARD_REVEAL_END - last.offsetLeft);
+    };
+
     const scrollTween = gsap.to(track, {
-      x: () => Math.min(0, window.innerWidth - track.scrollWidth),
+      x: getEndX,
       ease: "none",
       scrollTrigger: {
         trigger: pin,
         start: "top top",
-        end: () => `+=${Math.max(track.scrollWidth - window.innerWidth, window.innerHeight)}`,
+        end: () => `+=${Math.max(Math.abs(getEndX()), window.innerHeight)}`,
         pin: true,
         scrub: 1,
         invalidateOnRefresh: true,
       },
     });
 
-    gsap.utils.toArray(".work__card").forEach((card) => {
+    cards.forEach((card) => {
       gsap.fromTo(card, {
         scale: 0.92,
         autoAlpha: 0.42,
@@ -94,7 +102,7 @@ useSectionAnimation(root, (mm, scope) => {
           trigger: card,
           containerAnimation: scrollTween,
           start: "left 88%",
-          end: "left 52%",
+          end: `left ${CARD_REVEAL_END * 100}%`,
           scrub: true,
         },
       });

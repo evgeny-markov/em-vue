@@ -86,11 +86,14 @@
 		border-radius: vc(20);
 		padding: vc(24);
 		min-height: vc(240);
+		text-decoration: none;
+		color: inherit;
 		background-color: $color-bg-elevated;
 		transition:
 			border-color $duration-fast $easing-out,
 			background-color $duration-fast $easing-out,
 			box-shadow $duration-base $easing-out;
+		cursor: pointer;
 
 		@include desktop {
 			flex-shrink: 0;

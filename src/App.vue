@@ -42,9 +42,12 @@ watch(
 );
 
 const onLoaderDone = async () => {
-  showLoader.value = false;
   window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  showLoader.value = false;
   await nextTick();
+  window.scrollTo(0, 0);
   ScrollTrigger.refresh();
 };
 </script>

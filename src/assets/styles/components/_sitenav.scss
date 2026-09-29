@@ -82,9 +82,17 @@
 	}
 
 	&__lang {
-		opacity: 0.4;
+		opacity: 0.62;
+		transition:
+			opacity $duration-fast $easing-out,
+			color $duration-fast $easing-out;
+
+		&:hover {
+			opacity: 1;
+		}
 
 		&.is-active {
+			color: $color-accent;
 			opacity: 1;
 		}
 	}

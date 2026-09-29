@@ -21,7 +21,6 @@
 		--width-current: 100vw;
 	}
 
-	
 	@include desktop-aspect {
 		--width-base: 786;
 		--width-current: 100vh;
@@ -96,9 +95,19 @@ main {
 	z-index: 1;
 }
 
-html.is-locked,
-html.is-locked body {
+html.is-locked {
 	overflow: hidden;
+	overscroll-behavior: none;
+}
+
+html.is-locked body {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	overscroll-behavior: none;
 }
 
 .layout {

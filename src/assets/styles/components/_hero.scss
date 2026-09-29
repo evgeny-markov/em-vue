@@ -88,11 +88,15 @@
 		letter-spacing: 0.04em;
 		color: $color-accent-ink;
 		background-color: $color-accent;
-		transition: transform $duration-fast $easing-out;
+		transition:
+			color $duration-fast $easing-out,
+			background-color $duration-fast $easing-out;
 		cursor: pointer;
 
-		&:hover {
-			transform: translateY(-2px);
+		&:hover,
+		&:focus-visible {
+			color: $color-accent;
+			background-color: $color-surface;
 		}
 
 		@include desktop {

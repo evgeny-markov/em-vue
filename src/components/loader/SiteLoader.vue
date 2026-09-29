@@ -57,12 +57,20 @@ const paddedProgress = computed(() => String(progress.value).padStart(3, "0"));
 
 const letters = computed(() => Array.from(t("loader.word")));
 
+const scrollToStart = () => {
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
+
 const unlock = () => {
   document.documentElement.classList.remove("is-locked");
 };
 
 const finish = () => {
+  scrollToStart();
   unlock();
+  scrollToStart();
   loaderStore.complete();
   emit("done");
 };
@@ -167,11 +175,7 @@ const playLoader = () => {
 
   const tl = gsap.timeline({
     defaults: { ease: "power3.out" },
-    onComplete: () => {
-      unlock();
-      loaderStore.complete();
-      emit("done");
-    },
+    onComplete: finish,
   });
 
   outerGlyphs.forEach((glyph, index) => {
@@ -246,6 +250,7 @@ onMounted(() => {
     return;
   }
 
+  scrollToStart();
   document.documentElement.classList.add("is-locked");
 
   ctx = gsap.context(() => {
@@ -267,6 +272,7 @@ onUnmounted(() => {
   bounceTweens = [];
   pointerCleanup?.();
   ctx?.revert();
+  scrollToStart();
   unlock();
 });
 </script>
