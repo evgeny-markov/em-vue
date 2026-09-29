@@ -149,8 +149,9 @@
 	}
 
 	@include desktop {
-		padding-top: vc(120);
-		padding-bottom: vc(72);
+		align-items: center;
+		padding-top: vc(140);
+		padding-bottom: vc(40);
 	}
 }
 
