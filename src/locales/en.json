@@ -55,7 +55,7 @@
       },
       "quality": {
         "title": "Quality & delivery",
-        "items": ["ESLint / Stylelint", "Oxlint", "Vitest", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted Frontend"]
+        "items": ["ESLint / Stylelint", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted"]
       }
     }
   },
@@ -161,6 +161,7 @@
     "text": "Full-time. Remote only. Happy to talk about Vue / Nuxt work where both the interface and the engineering matter.",
     "links": {
       "telegram": "Telegram",
+      "github": "GitHub",
       "hh": "Resume"
     },
     "note": "Reach out on Telegram or open the resume on hh.ru. Public projects live in the work section above."

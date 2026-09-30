@@ -55,7 +55,7 @@
       },
       "quality": {
         "title": "Качество и поставка",
-        "items": ["ESLint / Stylelint", "Oxlint", "Vitest", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted Frontend"]
+        "items": ["ESLint / Stylelint", "Docker Compose", "GitLab CI", "i18n", "SEO / PWA", "AI-assisted"]
       }
     }
   },
@@ -161,6 +161,7 @@
     "text": "Полная занятость. Только удалённо. Готов обсудить Vue / Nuxt задачи, где важен и интерфейс, и аккуратная инженерия.",
     "links": {
       "telegram": "Telegram",
+      "github": "GitHub",
       "hh": "Резюме"
     },
     "note": "Пишите в Telegram или смотрите резюме на hh.ru. Публичные проекты — в блоке выше."

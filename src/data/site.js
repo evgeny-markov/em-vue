@@ -16,6 +16,10 @@ export const CONTACT_LINKS = [
     href: "https://t.me/evgeniy_markov",
   },
   {
+    id: "github",
+    href: "https://github.com/evgeny-markov/em-vue",
+  },
+  {
     id: "hh",
     href: "https://hh.ru/resume/e952357aff068bca3e0039ed1f4b575a7a6c65",
   },
